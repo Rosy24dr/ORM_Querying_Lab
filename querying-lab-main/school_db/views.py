@@ -384,9 +384,9 @@ SELECT `school_db_student`.`id`,
 # Print out the instructors full name and number of courses to the console
 def bonus_problem(request):
 
+  instructors = Instructor.objects.annotate()
 
-
-    return complete(request)
+  return complete(request)
 
 
 # Supporting Query Method Documentation:
